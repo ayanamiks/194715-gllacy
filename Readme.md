@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Геннадий Кужельный](https://up.htmlacademy.ru/htmlcss/18/user/194715).
-* Наставник: [Дмитрий Безуглый] (https://htmlacademy.ru/profile/shalfey41)
+* Наставник: [Дмитрий Безуглый](https://htmlacademy.ru/profile/shalfey41).
 
 ---
 
