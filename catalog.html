@@ -11,8 +11,8 @@
   <header class="main-header">
     <div class="logo">
       <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип GLLACY">
-          </a>
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип GLLACY">
+      </a>
     </div>
     <nav class="main-nav">
       <ul class="navigation-site">
@@ -24,14 +24,12 @@
     </nav>
     <div class="control">
       <ul class="navigation-user">
-        <!--Нужен ли класс для ul-->
-        <li><a class="search" href="#"></a></li>
-        <li><a class="enter" href="#">Вход</a></li>
-        <li><a class="basket" href="#">Пусто</a></li>
+        <li><a class="search" href="search.html">Поиск</a></li>
+        <li><a class="enter" href="login.html">Вход</a></li>
+        <li><a class="basket" href="basket.html">Пусто</a></li>
       </ul>
     </div>
     <div class="main-work-time">
-      <!--Сомнительное название класса-->
       <p class="work-time">C 10 до 20, ежедневно</p>
       <b class="phone">8 812 450-25-25</b>
     </div>
@@ -50,11 +48,16 @@
       <h2 class="visually-hidden">Коталог сливочного мороженого</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <p class="catalog-item-price">310/кг</p>
-          <a class="catalog-category" href="#">Сливочное с апельсиновым джемами и цитрусовой стружкой</a>
-          <a href="#" class="catalog-item-image">                  
-            <img src="img/catalog-popular1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        <!--Правильно ли я переразметил контейнер с учетом доступности-->
+          <a href="catalog-item" class="">
+            <span class="catalog-category">Сливочное с апельсиновым джемами и цитрусовой стружкой</span>           
+            <img class="catalog-item-image" src="img/catalog-popular1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="catalog-item-price">310/кг</p>
+            <span class="button">Быстрый просмотр</span>
           </a>
+
+
+
         </li>
         <li class="catalog-item">
           <p class="catalog-item-price">380/кг</p>
@@ -143,17 +146,15 @@
           </a>
         </li>
       </ul>
+      <h3 class="visually-hidden">Список страниц</h3>
       <ul class="pagination-list">
-        <li class="pagination-item">
-          <a href="#">
-            <!--Как реализовать эту направляющую-->&lt;</a>
-        </li>
+        <li class="pagination-item"><a href="#">&lt;Назад</a></li>
         <li class="pagination-item pagination-item-current">1</li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-item"><a href="#">&lt;</a></li>
+        <li class="pagination-item"><a href="#">&lt;Вперед</a></li>
       </ul>
     </section>
   </main>

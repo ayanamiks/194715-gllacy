@@ -23,7 +23,7 @@
     </nav>
     <div class="control">
       <ul class="navigation-user">
-        <li><a class="search" href="#"></a></li>
+        <li><a class="search" href="#">Поиск</a></li>
         <li><a class="enter" href="#">Вход</a></li>
         <li><a class="basket" href="#">Пусто</a></li>
       </ul>
@@ -37,32 +37,35 @@
     <div class="promo">
       <div class="promo-slide">
         <h1 class="promo-title">Крем-брюле и пломбир с малиновым джемом</h1>
-        <button class="button promo-button" type="button">Давайте оба
-        </button>
+        <a class="button promo-button" href="#">Давайте оба</a>
       </div>
     </div>
     <div class="inner-stock">
       <article class="stock">
         <b>Малинка даром</b>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#" class="stock-button">Хочу варенье!</a>
-        <!--Может быть стоит заменить тоже на кнопку-->
+        <a href="#" class="button stock-button">Хочу варенье!</a>
       </article>
       <article class="stock">
         <b>Шоколадки даром</b>
         <br>
-        <p>При покупке 2 кг пломбира, упоковку вкуснейшей шоколадной присыпки.</p>
-        <a href="#" class="stock-button">Хочу шоколадки!</a>
+        <p>При покупке 2 кг пломбира,  добавим в ваш заказ упоковку вкуснейшей шоколадной присыпки.</p>
+        <a href="#" class="button stock-button">Хочу шоколадки!</a>
       </article>
     </div>
     <section>
+    <h2 class="visually-hidden">Коталог популярного мороженого</h2>
       <ul class="catalog-popular">
         <li class="catalog-item">
-          <p class="catalog-item-price">310/кг</p>
-          <a class="catalog-category" href="#">Сливочное с апельсиновым джемами и цитрусовой стружкой</a>
-          <a href="#" class="catalog-item-image">
-		  			<img src="img/catalog-popular1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-		  		</a>
+
+           <!--Правильно ли я переразметил контейнер с учетом доступности-->
+          <a href="catalog-item" class="">
+            <span class="catalog-category">Сливочное с апельсиновым джемами и цитрусовой стружкой</span>           
+            <img class="catalog-item-image" src="img/catalog-popular1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="catalog-item-price">310/кг</p>
+            <span class="button">Быстрый просмотр</span>
+          </a>
+
         </li>
         <li class="catalog-item">
           <p class="catalog-item-price">380/кг</p>
@@ -112,7 +115,8 @@
       <section>формы</section>
     </div>
     <section class="contakcs-map">
-      <img src="img/map.jpg" width="900" height="430" alt="Карта проезда">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.jpg" width="900" height="744" alt="Карта проезда">
       <section class="adress">
         <p>Адрес главного офиса и
           <br> офлайн магазина
@@ -124,7 +128,7 @@
           <b>8 812 450-25-25</b>
           <br> (С 10 до 20 ежедневно)
         </p>
-        <a href="#" class="adress-button">Форма обратной связи</a>
+        <a href="#" class=" button adress-button">Форма обратной связи</a>
       </section>
     </section>
   </main>
@@ -137,15 +141,13 @@
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </div>
-    <div class="info">
-      <!--Может лучше списком сделать-->
-      <img src="img/heart.svg" width="15" height="13">
-      <b class="footer-for"><a href="#">Для поставщиков</a></b>
-      <br>
-      <p class="footer-doc"><a href="#">О производстве</a></p>
-      <p class="footer-doc"><a href="#">Наши документы</a>
-        <br>
-        <a href="#">Экологические стандарты</a></p>
+    <div class="info"><!--Нужно ли здесь div оставить?-->
+      <ul class="footer-list">
+      	<li class=""><a href="#">Для поставщиков</a></li>
+      	<li><a href="#">О производстве</a></li>
+      	<li><a href="#">Наши документы</a></li>
+      	<li><a href="#">Экологические стандарты</a></li>
+      </ul>
     </div>
     <div>
       <p class="footer-copyright">
