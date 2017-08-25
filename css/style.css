@@ -1,14 +1,315 @@
-@font-face { 
-  font-family: 'Roboto'; 
+@font-face {
+  font-family: 'Roboto';
   src: url('../fonts/web/roboto.woff2') format('woff2'),
-        url('../fonts/web/roboto.woff') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
+        url('../fonts/web/roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #849D8F;
+}
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+h2 {
+  font-size: 35px;
+  line-height: 41px;
+}
+a {
+
+}
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  border: none;
+}
+ .red {
+  background-color: #EC573B;
+}
+.red:hover { /*не знаю как сделать градиент*/
+  background-color: #FF8266;
+}
+.red:active {
+  background-color: #FA4A30;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-nav,
+.control {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.navigation-site,
+.navigation-user,
+.submenu {
+  list-style: none;
+}
+
+.navigation-site a,
+.navigation-user a {
+  color: #ffffff;
+}
+.navigation-site a:hover,
+.navigation-site a:active,
+.navigation-user a:hover,
+.navigation-user a:active,
+.main-work-time a:hover,
+.main-work-time a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navigation-user input {
+  border: 2px solid #D4D4D3
+}
+.navigation-user input:hover{
+  border-color: #C9C7C6;
+}
+.navigation-user input:focus{
+  border-color: #77BEEE;
+}
+.main-work-time p {
+ font-size: 14px;
+ line-height: 16px;
+}
+.main-work-time a {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.promo-slide {
+  text-align: center;
+}
+.promo-slide a {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+.inner-stock p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.inner-stock a {
+  font-size: 18px;
+  line-height: 24px;
+}
+.stock-berries {
+  background-image: url(../img/berries.jpg);
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+}
+.stock-chocolate {
+  background-image: url(../img/chocolate.jpg);
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+}
+
+
+
+.catalog-popular{
+  list-style: none;
+}
+.catalog-popular a {
+  color: #ffffff;
+}
+.catalog-popular a:hover,
+.catalog-popular a:active {
+  color: #FFBD9E;
+}
+.catalog-popular button {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.feature {
+  background-image: url(../img/waffle.jpg);
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+  color: #323232;
+}
+
+
+.inner-new {
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
+  border: 2px solid #000000;
+}
+.inner-new a {
+  color: #000000;
+  font-size: 24px;
+  line-height: 30px;
+}
+.inner-new a:hover,
+.inner-new a:active {
+  color: #FFBD9E;
+}
+.inner-form {
+  background-image: url(../img/substate.png),
+                    url(../img/post-background.png);
+  background-repeat: no-repeat;
+  color: #5D5D5C;                
+}
+.inner-form input {
+  font: inherit;
+  border: 2px solid #D4D4D3
+}
+.inner-form input:hover {
+  border-color: #C9C7C6;
+}
+.inner-form input:focus {
+  border-color: #77BEEE;
+}
+
+.address {
+  border: 2px solid #000000;
+}
+.address b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.main-footer ul {
+  list-style: none;
+}
+.main-footer a {
+  color: #ffffff;
+}
+.main-footer a:hover,
+.main-footer a:active {
+  color: #FFBD9E;
+}
+.footer-list li {
+  text-align: center;
+}
+.footer-copyright {
+  text-align: center;
+}
+
+.info li {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-item {
+font-weight: bold;
+}
+
+.modal-feedback {
+  color: #000000;
+  background-color: #F8F7F4;
+  border: 1px solid #000000;
+}
+.modal-feedback h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+.modal-feedback input,
+.modal-feedback textarea {
+  font: inherit;
+  border: 2px solid #D4D4D3;
+}
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+  border-color: #C9C7C6;
+}
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+  border-color: #77BEEE;
+}
+
+.navigation-site-activ {
+  background-color: #D07058;
+}
+.basket-item {
+  color: #ffffff; /* Разобраться со шрифтом, в статике должен быть черным */
+  background-color: #F7F6F3;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs li {
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs a {
+  color: #ffffff;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #FFBD9E;
+}
+
+
+.sorting label,
+.price label,
+.radio p,
+.checkbox p {
+  font-size: 14px;
+  line-height: 16px;
+}
+.sorting input {
+  background-color: #A9B9AF;
+}
+.sorting input:hover {
+  background-color: #FFFFFF;
+}
+
+.radio input:hover { /* не работает, разобраться */
+  color: #FFFFFF;
+}
+
+.checkbox li {
+  list-style: none;
+}
+.checkbox input:hover { /* не работает, разобраться */
+  color: #000000;
+}
+
+.filters-form button {
+  background-color: #94B2A5;
+  border: 2px solid #FBFCFB;
+}
+.filters-form button:hover {
+  background-color: #FBFCFB;
+}
+.filters-form button:active {
+  background-color: #EBEBEB;
+}
+
+
+.pagination-list li {
+  list-style: none;
   
+}
+.pagination-list a {
+  color: #FFFFFF;
+} 
+.pagination-list a:hover,
+.pagination-list a:active {
+  color: #FFBD9E;
 }
