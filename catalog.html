@@ -6,7 +6,6 @@
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -30,34 +29,38 @@
         <li><a class="basket basket-item" href="basket.html">2 товара</a>
           <section>
             <table>
-              <tr class="visually-hidden">
-                <th>Удалить</th>
-                <th>Вид мороженого</th>
-                <th>общий вес</th>
-                <th>цена за киллограм</th>
-                <th>сумма</th>
-              </tr>
-              <tr>
-                <td>Удалить</td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1.5кг х</td>
-                <td>200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td>Удалить</td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1.5кг х</td>
-                <td>300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Итого:</td>
-                <td>750 руб.</td>
-              </tr>
+              <thead class="visually-hidden">
+                <tr>
+                  <th>Удалить</th>
+                  <th>Вид мороженого</th>
+                  <th>общий вес</th>
+                  <th>цена за киллограм</th>
+                  <th>сумма</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Удалить</td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1.5кг х</td>
+                  <td>200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td>Удалить</td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1.5кг х</td>
+                  <td>300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Итого:</td>
+                  <td>750 руб.</td>
+                </tr>
+              </tbody>
             </table>
             <button class="button red" type="submit">Оформить заказ</button>
           </section>
@@ -75,74 +78,71 @@
       <li><a href="catalog.html">Каталог</a></li>
       <li>Сливочное</li>
     </ul>
-    <h1 class="title-page">Сливочное мороженое</h1>
+    <h1 class="subtitle">Сливочное мороженое</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры товаров</h2>
       <form method="post" action="#">
-        <fieldset class="filters-form">
-          <legend class="visually-hidden">Заказ мороженого</legend>
-          <div class="sorting">
-            <label for="menu">Сортировка:</label>
-            <input type="text" list="sorting" name="picking" id="menu">
-            <datalist id="sorting">
-             <option value="по популярности">
-                <option value="сначала недорогие">
-                  <option value="сначала дорогие">
-                    <option value="по жирности">
-            </datalist>
-          </div>
-          <div class="price">
-            <label for="range">Цена: 100 руб.-500 руб.</label>
-            <input type="range" min="100" max="500" step="1" id="range">
-          </div>
-          <div class="radio">
-            <p>Жирность:</p>
-            <label for="zero">
-              <input type="radio" name="position" value="0%" id="zero"> 0%
-            </label>
-            <label for="up-to-ten">
-              <input type="radio" name="position" value="up to 10%" checked id="up-to-ten"> до 10%
-            </label>
-            <label for="up-to-thirty">
-              <input type="radio" name="position" value="up to 30%" id="up-to-thirty"> до 30%
-            </label>
-            <label for="over-thirty">
-              <input type="radio" name="position" value="over 30%" id="over-thirty"> выше 30%
-            </label>
-          </div>
-          <div class="checkbox">
-            <p>Наполнители:</p>
-            <ul id="checkbox-list">
-              <!--Подумать насчет списка-->
-              <li>
-                <label for="chocolate">
-                  <input type="checkbox" checked id="chocolate"> шоколадные
-                </label>
-              </li>
-              <li>
-                <label for="sugar">
-                  <input type="checkbox" checked id="sugar"> сахарные присыпки
-                </label>
-              </li>
-              <li>
-                <label for="fruits">
-                  <input type="checkbox" id="fruits"> фрукты
-                </label>
-              </li>
-              <li>
-                <label for="syrups">
-                  <input type="checkbox" id="syrups"> сиропы
-                </label>
-              </li>
-              <li>
-                <label for="jams">
-                  <input type="checkbox" id="jams"> джемы
-                </label>
-              </li>
-            </ul>
-          </div>
-          <button type="submit" name="apply" value="Применить">Применить</button>
-        </fieldset>
+        <legend class="visually-hidden">Заказ мороженого</legend>
+        <div class="sorting">
+          <label for="sorting">Сортировка:</label>
+          <select id="sorting">
+            <option value="по популярности">по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </select>
+        </div>
+        <div class="price">
+          <label for="range">Цена: 100 руб.-500 руб.</label>
+          <input type="range" min="100" max="500" step="1" id="range">
+        </div>
+        <div class="radio">
+          <p>Жирность:</p>
+          <label>
+            <input type="radio" name="position" value="0%" id="zero"> 0%
+          </label>
+          <label>
+            <input type="radio" name="position" value="up to 10%" checked id="up-to-ten"> до 10%
+          </label>
+          <label>
+            <input type="radio" name="position" value="up to 30%" id="up-to-thirty"> до 30%
+          </label>
+          <label>
+            <input type="radio" name="position" value="over 30%" id="over-thirty"> выше 30%
+          </label>
+        </div>
+        <div class="checkbox">
+          <p>Наполнители:</p>
+          <ul id="checkbox-list">
+            <!--Подумать насчет списка-->
+            <li>
+              <label>
+                <input type="checkbox" checked id="chocolate"> шоколадные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked id="sugar"> сахарные присыпки
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" id="fruits"> фрукты
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" id="syrups"> сиропы
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" id="jams"> джемы
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" name="apply" value="Применить">Применить</button>
       </form>
     </section>
     <section>
@@ -229,7 +229,7 @@
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-item"><a href="#">&lt;Вперед</a></li>
+        <li class="pagination-item"><a href="#">&gt;Вперед</a></li>
       </ul>
     </section>
   </main>

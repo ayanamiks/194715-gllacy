@@ -17,11 +17,14 @@ body {
   color: #ffffff;
   background-color: #849D8F;
 }
-h1 {
+.title,
+.subtitle {
   font-size: 60px;
   line-height: 60px;
 }
-h2 {
+.stock-berries-title,
+.stock-chocolate-title,
+.feature-title {
   font-size: 35px;
   line-height: 41px;
 }
@@ -60,6 +63,7 @@ a {
 .navigation-user,
 .submenu {
   list-style: none;
+  
 }
 
 .navigation-site a,
@@ -279,14 +283,14 @@ font-weight: bold;
   background-color: #FFFFFF;
 }
 
-.radio input:hover { /* не работает, разобраться */
+.radio:hover { 
   color: #FFFFFF;
 }
 
 .checkbox li {
   list-style: none;
 }
-.checkbox input:hover { /* не работает, разобраться */
+.checkbox:hover { 
   color: #000000;
 }
 

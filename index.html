@@ -6,8 +6,6 @@
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
 
 <body>
@@ -19,7 +17,7 @@
     </div>
     <nav class="main-nav">
       <ul class="navigation-site">
-        <li><a href="#">Каталог</a>
+        <li><a href="catalog.html">Каталог</a>
           <ul class="submenu">
             <li><a href=#>Новинки</a></li>
             <li><a href=#>Сливочное</a></li>
@@ -42,19 +40,17 @@
         </li>
         <li><a class="enter" href="login.html">Вход</a>
           <form class="enter-form" action="#" method="post">
-            <fieldset>
-              <p>
-                <label class="visually-hidden" for="user-enter-mail">Электронная почта</label>
-                <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" placeholder="Электронная почта">
-              </p>
-              <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="enter-icon-password" name="password" type="password" placeholder="Пароль" id="user-password">
-              </p>
-              <button class="button red" type="submit">Войти</button>
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="regisration" href="#">Новая регистрация</a>
-            </fieldset>
+            <p>
+              <label class="visually-hidden" for="user-enter-mail">Электронная почта</label>
+              <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="enter-icon-password" name="password" type="password" placeholder="Пароль" id="user-password">
+            </p>
+            <button class="button red" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="regisration" href="#">Новая регистрация</a>
           </form>
         </li>
         <li><a class="basket" href="basket.html">Пусто</a></li>
@@ -65,21 +61,21 @@
       <a href="tel:88124502525">8 812 450-25-25</a>
     </div>
   </header>
-  <main class="conteiner">
+  <main class="container">
     <div class="promo">
       <div class="promo-slide">
-        <h1 class="promo-title">Крем-брюле и пломбир с малиновым джемом</h1>
+        <h1 class="title">Крем-брюле и пломбир с малиновым джемом</h1>
         <a class="button red link" href="#">Давайте оба</a>
       </div>
     </div>
     <div class="inner-stock">
       <article class="stock-berries">
-        <h2>Малинка даром</h2>
+        <h2 class="stock-berries-title">Малинка даром</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <a href="#" class="button red link">Хочу варенье!</a>
       </article>
       <article class="stock-chocolate">
-        <h2>Шоколадки даром</h2>
+        <h2 class="stock-chocolate-title">Шоколадки даром</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упоковку вкуснейшей шоколадной присыпки.</p>
         <a href="#" class="button red link">Хочу шоколадки!</a>
       </article>
@@ -105,7 +101,6 @@
           <p class="catalog-item-price">355/кг</p>
           <button class="button red">Быстрый просмотр</button>
         </li>
-        </li>
         <li class="catalog-item">
           <a href="#" class="catalog-category">Сливочное крем-брюле с карамельной подливкой</a>
           <img class="catalog-item-image4" src="img/ice-cream4.png" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -115,7 +110,7 @@
       </ul>
     </section>
     <section class="feature">
-      <h2 class="caption-feature">Магазин Глейси  &ndash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+      <h2 class="feature-title">Магазин Глейси  &ndash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
       <div>
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
       </div>
@@ -129,19 +124,19 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
       </div>
     </section>
-      <article class="inner-new">
-        <p>Новое в нашем блоке</p>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
-      <section class="inner-form">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <form action="#" method="post">
-          <label for="subscribe-mail" class="visually-hidden">Электронная почта</label>
-          <input type="email" name="email" placeholder="Электронная почта" id="subscribe-mail">
-          <button class="button red" type="submit">Отправить</button>
-        </form>
-      </section>
+    <article class="inner-new">
+      <p>Новое в нашем блоке</p>
+      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+    </article>
+    <section class="inner-form">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      </p>
+      <form action="#" method="post">
+        <label for="subscribe-mail" class="visually-hidden">Электронная почта</label>
+        <input type="email" name="email" placeholder="Электронная почта" id="subscribe-mail">
+        <button class="button red" type="submit">Отправить</button>
+      </form>
+    </section>
     <section class="contakcs-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.jpg" width="900" height="744" alt="Карта проезда">
@@ -185,7 +180,7 @@
     </div>
   </footer>
   <section class="modal-feedback">
-    <h2>Мы обязательно вам ответим!</h2>
+    <h3>Мы обязательно вам ответим!</h3>
     <form class="feedback-form" action="#" method="post">
       <p>
         <label class="visually-hidden" for="user-name">Как вас зовут?</label>
@@ -204,4 +199,5 @@
     <button class="button modal-close" type="button">Закрыть</button>
   </section>
 </body>
+
 </html>
