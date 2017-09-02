@@ -6,6 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/group.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     </div>
     <nav class="main-nav">
       <ul class="navigation-site">
-        <li><a href="catalog.html">Каталог</a>
+        <li><a class="catalog-menu" href="catalog.html">Каталог</a>
           <ul class="submenu">
             <li><a href=#>Новинки</a></li>
             <li><a href=#>Сливочное</a></li>
@@ -26,39 +27,47 @@
             <li><a href=#>Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+        <li><a class="payment-menu" href="#">Доставка и оплата</a></li>
+        <li><a class="about-company-menu" href="#">О компании</a></li>
       </ul>
     </nav>
-    <div class="control">
-      <ul class="navigation-user">
-        <li><a class="search" href="search.html">Поиск</a>
-          <form class="search-form" action="#" method="post">
-            <label class="visually-hidden" for="user-search">Что ищем?</label>
-            <input class="search-icon" id="user-search" type="search" placeholder="Что ищем?">
-          </form>
-        </li>
-        <li><a class="enter" href="login.html">Вход</a>
-          <form class="enter-form" action="#" method="post">
-            <p>
-              <label class="visually-hidden" for="user-enter-mail">Электронная почта</label>
-              <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" placeholder="Электронная почта">
-            </p>
-            <p>
-              <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="enter-icon-password" name="password" type="password" placeholder="Пароль" id="user-password">
-            </p>
-            <button class="button red" type="submit">Войти</button>
-            <a class="restore" href="#">Забыли пароль?</a>
-            <a class="regisration" href="#">Новая регистрация</a>
-          </form>
-        </li>
-        <li><a class="basket" href="basket.html">Пусто</a></li>
-      </ul>
-    </div>
-    <div class="main-work-time">
-      <p class="work-time">C 10 до 20, ежедневно</p>
-      <a href="tel:88124502525">8 812 450-25-25</a>
+    <div class="control-wrapper">
+      <div class="control">
+        <ul class="navigation-user">
+          <ul class="search-ul">
+          <li><a class="search" href="search.html"><span class="visually-hidden">Поиск</span></a>
+          </ul>
+            <form class="search-form" action="#" method="post">
+              <label class="visually-hidden" for="user-search">Что ищем?</label>
+              <input class="search-icon" id="user-search" type="search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <ul class="enter-ul">
+          <li><a class="enter" href="login.html">Вход</a>
+          </ul>
+            <form class="enter-form" action="#" method="post">
+              <p>
+                <label class="visually-hidden" for="user-enter-mail">Электронная почта</label>
+                <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="enter-icon-password" name="password" type="password" placeholder="Пароль" id="user-password">
+              </p>
+              <button class="button red" type="submit">Войти</button>
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="regisration" href="#">Новая регистрация</a>
+            </form>
+          </li>
+          <ul class="basket-ul">
+          <li><a class="basket" href="basket.html">Пусто</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="main-work-time">
+        <p class="work-time">C 10 до 20, ежедневно</p>
+        <a href="tel:88124502525">8 812 450-25-25</a>
+      </div>
     </div>
   </header>
   <main class="container">
@@ -68,7 +77,7 @@
         <a class="button red link" href="#">Давайте оба</a>
       </div>
     </div>
-    <div class="inner-stock">
+    <div class="inner-stock container">
       <article class="stock-berries">
         <h2 class="stock-berries-title">Малинка даром</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -124,41 +133,47 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
       </div>
     </section>
-    <article class="inner-new">
-      <p>Новое в нашем блоке</p>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </article>
-    <section class="inner-form">
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <form action="#" method="post">
-        <label for="subscribe-mail" class="visually-hidden">Электронная почта</label>
-        <input type="email" name="email" placeholder="Электронная почта" id="subscribe-mail">
-        <button class="button red" type="submit">Отправить</button>
-      </form>
-    </section>
-    <section class="contakcs-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map.jpg" width="900" height="744" alt="Карта проезда">
-      <section class="address">
-        <h2 class="visually-hidden">Адрес главного офиса</h2>
-        <p>Адрес главного офиса и
-          <br> офлайн магазина
-          <br>
-          <b>ул. Большая Конюшенная<br>
-              19/8 Санкт-Петербург</b>
-          <br> Для заказов по телефону:
-          <br>
-          <b>8 812 450-25-25</b>
-          <br> (С 10 до 20 ежедневно)
+    <div class="inner-wrapper">
+      <article class="inner-new">
+        <p>Новое в нашем блоке</p>
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
+      <section class="inner-form">
+        <p>Подпишитесь на нашу сладкую рассылку
+          <br> и будете всегда в курсе всего самого вкусного,
+          <br> что у нас происходит. Обещаем не спамить и не
+          <br> слать всякой ненужной ерунды. Честно =)
         </p>
-        <button class="button red" type="submit">Форма обратной связи</button>
+        <form class="subscribe" action="#" method="post">
+          <label for="subscribe-mail" class="visually-hidden">Электронная почта</label>
+          <input type="email" name="email" placeholder="Электронная почта" id="subscribe-mail">
+          <button class="button red" type="submit">Отправить</button>
+        </form>
       </section>
+    </div>
+    <section>
+      <div class="contacts-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <section class="address">
+          <h2 class="visually-hidden">Адрес главного офиса</h2>
+          <p>Адрес главного офиса и
+            <br> офлайн магазина
+            <br>
+            <b>ул. Большая Конюшенная<br>
+              19/8 Санкт-Петербург</b>
+            <br> Для заказов по телефону:
+            <br>
+            <b>8 812 450-25-25</b>
+            <br> (С 10 до 20 ежедневно)
+          </p>
+          <button class="button red" type="submit">Форма обратной связи</button>
+        </section>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <div>
-      <ul>
+      <ul class="social-buttons">
         <li><a class="social-button" href="#">Твитер</a></li>
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -201,3 +216,4 @@
 </body>
 
 </html>
+<div class="wrapper"></div>
