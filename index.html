@@ -48,8 +48,8 @@
                   </svg>
                   <span class="visually-hidden">Поиск</span></a>
                 <form class="search-form" action="#" method="post">
-                  <label class="visually-hidden" for="user-search">Что ищем?</label>
-                  <input class="search-icon" id="user-search" type="search" placeholder="Что ищем?">
+                  <input class="search-icon" id="user-search" type="search" required>
+                  <label class="search-label" for="user-search">Что ищем?</label>
                 </form>
               </li>
               <li class="enter-ul">
@@ -62,13 +62,15 @@
                   </svg><span class="icon-enter">
                   Вход</span></a>
                 <form class="enter-form" action="#" method="post">
-                  <p>
-                    <label class="visually-hidden" for="user-enter-mail">Электронная почта</label>
-                    <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" placeholder="Электронная почта">
+                  <p class="enter-control">
+                    <input class="enter-icon-mail" id="user-enter-mail" type="email" name="email" required>
+                    <label class="enter-label" for="user-enter-mail">Электронная почта</label>
+                    
                   </p>
-                  <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="enter-icon-password" name="password" type="password" placeholder="Пароль" id="user-password">
+                  <p class="enter-control">
+                    <input class="enter-icon-mail" name="password" type="password" id="user-password" required>
+                    <label class="enter-label" for="user-password">Пароль</label>
+                    
                   </p>
                   <button class="red button-enter-form" type="submit">Войти</button>
                   <div class="enter-wrapper-link">
@@ -250,9 +252,10 @@
             <div class="inner-form-wrapper">
               <p class="inner-form-paragraph">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-              <form class="subscribe " action="# " method="get">
-                <label for="subscribe-mail" class="visually-hidden">Электронная почта</label>
-                <input class="email" type="email" name="email" placeholder="Электронная почта " id="subscribe-mail">
+              <form class="subscribe" action="# " method="get">
+                <input class="email" type="email" name="email"  id="subscribe-mail" required>
+                <label for="subscribe-mail" class="email-label">Электронная почта</label>
+                
                 <button class="red subscribe-btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -261,6 +264,7 @@
         <section>
           <div class="contacts-map ">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.577078882387!2d30.321162836998482!3d59.93915963501575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1505404079612" width="1200" height="430"  style="border:0" allowfullscreen></iframe>
             <section class="address">
               <h2 class="visually-hidden">Адрес главного офиса</h2>
               <div class="address-paragraph">
@@ -310,20 +314,21 @@
           </div>
         </div>
       </footer>
-      <section class="modal-feedback visually-hidden">
+      <section class="modal-feedback">
         <h3>Мы обязательно вам ответим!</h3>
         <form class="feedback-form" action="#" method="get">
-          <p>
-            <label class="visually-hidden" for="user-name">Как вас зовут?</label>
-            <input class="feedback-icon-name" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+          <p class="modal-control">
+            <input class="feedback-icon" id="user-name" type="text" name="login" required>
+            <label class="modal-label" for="user-name">Как вас зовут?</label>
+           
           </p>
-          <p>
-            <label class="visually-hidden" for="user-mail">Ваша почта для ответа?</label>
-            <input class="feedback-icon-mail" id="user-mail" type="email" name="mail" placeholder="Ваша почта для овета?">
+          <p class="modal-control">
+            <input class="feedback-icon" id="user-mail" type="email" name="mail" required>
+            <label class="modal-label" for="user-mail">Ваша почта для ответа?</label>
           </p>
-          <p>
-            <label class="visually-hidden" for="user-text">Напишите что-нибудь...</label>
-            <textarea class="feedback-icon-text" id="user-text" name="text" rows="5" placeholder="Напишите что-нибудь... "></textarea>
+          <p class="modal-control">
+            <textarea class="feedback-icon feedback-icon-width" id="user-text" name="text" rows="3" required></textarea>
+            <label class="modal-label" for="user-text">Напишите что-нибудь...</label>
           </p>
           <button class="red modal-button" type="submit">Отправить</button>
         </form>
@@ -331,6 +336,7 @@
       </section>
     </div>
   </div>
+  <script src="js/minscript.js"></script>
 </body>
 
 </html>
